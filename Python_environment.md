@@ -1,14 +1,12 @@
-# Python・Django・Anacondaでの環境構築(Windows版)
+# Python・Django・Anacondaでの環境構築手順の紹介(Windows版)
 
-## Anacondaでの仮想環境の構築手順
-
-### １. Anacondaのインストール
+## １. Anacondaのインストール
 - [Anacondaのダウンロードページ](https://www.anaconda.com/distribution/)から、Windows用のAnacondaをダウンロード・インストールする   
     参考 ↓   
     - [AnacondaをWindowsnにインストールする手順](https://weblabo.oscasierra.net/python-anaconda-install-windows/)  
     - [AnacondaのPathをWindowsで通す話](https://sukitokuportfolio.wordpress.com/2018/11/20/anaconda%E3%81%AEpath%E3%82%92windows%E3%81%A7%E9%80%9A%E3%81%99%E8%A9%B1/)
 
-### 2. Anaconda Promptを起動し、下記のコマンドを実行する
+## 2. Anaconda Promptを起動し、下記のコマンドを実行する
 
 1. `conda -create -m [環境名] python=[version]` で仮想環境を構築  
     - ※上手くいかない場合は、`conda update -n base conda` を投入後に上記のコマンドを投入すれば、上手くいくかも  
@@ -29,6 +27,6 @@
 7. `python manage.py runserver` でサーバ起動
     - `ModuleNotFoundError: No module named 'sqlparse'` というエラーが発生した場合、`conda install sqlparse` でsqlparseをインストールする
 
-### 3. http://localhost:8000/ へアクセス
+## 3. http://localhost:8000/ へアクセス
 ![](./django-startup.PNG)
 - 上記の画面が表示されれば成功！
