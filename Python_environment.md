@@ -8,8 +8,8 @@
 
 ## 2. Anaconda Promptを起動し、下記のコマンドを実行する
 
-1. `conda -create -m [環境名] python=[version]` で仮想環境を構築  
-    - ※上手くいかない場合は、`conda update -n base conda` を投入後に上記のコマンドを投入すれば、上手くいくかも  
+1. `conda -create -n [環境名] python=[version]` で仮想環境を構築  
+    - ※上手くいかない場合は、`conda update -n base conda` を投入後に上記のコマンドを投入すれば、上手くいくはず  
     - 仮想環境を構築できた場合、C:\\Users\\[user_name]\\Anaconda3\\envs の中に[環境名]のディレクトリが作成される
 
 2. `activate [環境名]` で作成した仮想環境へ入る
